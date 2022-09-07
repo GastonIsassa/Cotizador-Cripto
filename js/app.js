@@ -101,7 +101,7 @@ async function consultarAPI() {
         
     try {
         const respuesta = await fetch(url);
-        const contizacion = await respuesta.json();
+        const cotizacion = await respuesta.json();
         mostrarCotizacionHTML(cotizacion.DISPLAY[criptomoneda][moneda]);
     } catch (error) {
         console.log(error);
